@@ -1,0 +1,17 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons h2 {
+    text-align: center;
+    color: lightblue
+}
+
+.buttons button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 5px 10px;
+}
