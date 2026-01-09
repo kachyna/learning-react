@@ -5,10 +5,15 @@
 //      * it allows us to write HTML in javascript
 //      * anything in { } brackets is deemed as a javascript code
 
+import Book from "./components/Book"
+
 const App = () => {
-    return (
+
+    var html;
+    return <>
         <h1>Our first component.</h1>
-    )
+        <Book />
+    </>
 }
 
 export default App
