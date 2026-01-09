@@ -1,11 +1,15 @@
 import "./Book.css"
 import OrderButton from "./OrderButton"
 
-const Book = () => {
-    return <div  className="one-book">
-    <h2>Book name</h2>
-    <OrderButton />
+const Book = ( props ) => {
+    return (
+    <div className="one-book">
+        <img src={props.image} alt="" />
+        <h2>{props.title}</h2>
+        <OrderButton />
     </div>
+    )
+    
 }
 
 export default Book
