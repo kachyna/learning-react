@@ -12,7 +12,13 @@ const App = () => {
 
     return <>
         <h1>Our first component.</h1>
-        <Book />
+        <div className="all-books">
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+        </div>
+        
         <OrderButton />
     </>
 }
