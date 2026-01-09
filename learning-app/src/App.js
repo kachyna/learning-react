@@ -6,7 +6,6 @@
 //      * anything in { } brackets is deemed as a javascript code
 
 import Book from "./components/Book"
-import OrderButton from "./components/OrderButton";
 
 const App = () => {
 
@@ -18,8 +17,6 @@ const App = () => {
             <Book />
             <Book />
         </div>
-        
-        <OrderButton />
     </>
 }
 

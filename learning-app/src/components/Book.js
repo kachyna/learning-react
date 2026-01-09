@@ -1,7 +1,11 @@
 import "./Book.css"
+import OrderButton from "./OrderButton"
 
 const Book = () => {
-    return <h2 className="one-book">Book name</h2>
+    return <div  className="one-book">
+    <h2>Book name</h2>
+    <OrderButton />
+    </div>
 }
 
 export default Book
