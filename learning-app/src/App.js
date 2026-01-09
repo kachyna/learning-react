@@ -10,7 +10,6 @@ import OrderButton from "./components/OrderButton";
 
 const App = () => {
 
-    var html;
     return <>
         <h1>Our first component.</h1>
         <Book />
