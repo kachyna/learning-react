@@ -15,7 +15,7 @@ const AllTasks = () => {
     const deleteAllTasksHandler = () => setTasks([])
 
     return (
-        <div>
+        <div className="all-tasks">
             { tasks.map( (task) => { 
                 const {id, name} = task
 
