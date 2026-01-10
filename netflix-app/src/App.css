@@ -6,3 +6,16 @@
   gap: 10px
   
 }
+
+.bts-movies-managament {
+  margin: 10px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.bts-movies-managament button {
+  
+  background-color: darkred;
+
+}
