@@ -12,6 +12,8 @@ const AllTasks = () => {
         setTasks( filtered )
     }
 
+    const deleteAllTasksHandler = () => setTasks([])
+
     return (
         <div>
             { tasks.map( (task) => { 
@@ -22,6 +24,7 @@ const AllTasks = () => {
                     <button type="button" onClick={ () => taskHandler(id) }>Delete</button>
                 </div> 
             })}
+            <button type="button" onClick={ deleteAllTasksHandler }>Delete all tasks</button>
         </div>
     )
 }
