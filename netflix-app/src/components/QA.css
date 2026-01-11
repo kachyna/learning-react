@@ -1,0 +1,15 @@
+.qna {
+    width: 50vw;
+}
+
+.question {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question button {
+    background-color: red;
+    
+}

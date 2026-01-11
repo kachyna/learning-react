@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import MovieCard from './components/MovieCard'
 import data from "./data"
+import QA from './components/QA'
 
 function App() {
   const [movies, setMovies] = useState( data )
@@ -29,6 +30,13 @@ function App() {
     <div className="bts-movies-managament">
       <button type="button" onClick={ () => setMovies( [] ) }>Delete all movies</button>
       <button type="button" onClick={ () => setMovies( data ) }>Show all movies</button>
+    </div>
+
+    <div className="faq">
+      <h2>Frequently asked questions</h2>
+      <QA question="What movies are on Netflix?" answer="All kinds of movies!"></QA>
+      <QA question="How to log in to Netflix?" answer="Click the login button in top-right corner."></QA>
+      <QA question="How much does Netflix cost?" answer="It's 20 USD per month."></QA>
     </div>
   </>
   )
