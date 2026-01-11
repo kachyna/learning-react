@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import MovieCard from './components/MovieCard'
+import MovieCarousel from './components/MovieCarousel'
 import data from "./data"
 import QA from './components/QA'
 
@@ -18,6 +19,9 @@ function App() {
   return ( 
   <>
     <h1>MyFlix Movie Library</h1>
+    <h2>Movies we love today</h2>
+      <MovieCarousel data={ data } />
+    <h2>All Movies</h2>
     <div className="filters">
       <button type="button" onClick={ () => filterMoviesByTag("Vtipný") }>Comedy</button>
       <button type="button" onClick={ () => filterMoviesByTag("Romantický") }>Romance</button>
