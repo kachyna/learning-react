@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { MdOutlineArrowDropDown } from "react-icons/md";
 import "./QA.css"
 
 const QA = ( {question, answer} ) => {
@@ -9,7 +10,7 @@ const QA = ( {question, answer} ) => {
         <div className="qna">
             <div className="question">
                 <h3 >{question}</h3>
-                <button onClick={ () => setShowAnswer( ! showAnswer )}>{ showAnswer ? "Hide Answer" : "Show Answer"}</button>
+                <button onClick={ () => setShowAnswer( ! showAnswer )}><MdOutlineArrowDropDown /> { showAnswer ? "Hide Answer" : "Show Answer"}</button>
             </div>
             <p className="answer">{showAnswer && answer}</p>
         </div>
