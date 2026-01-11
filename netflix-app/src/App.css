@@ -19,3 +19,14 @@
   background-color: darkred;
 
 }
+
+.filters {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  margin: 10px 0px
+}
+
+.filters button {
+  background-color: darkred;
+}
