@@ -1,0 +1,47 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 8px;
+  border-bottom: 1px solid hsl(0, 0%, 94%);
+  transition: background-color 0.2s;
+  border-radius: 6px;
+}
+
+.task:hover {
+  background-color: #f9f9f9;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+  word-break: break-word; 
+}
+
+.task button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  color: #ccc;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+}
+
+.task:hover button {
+  color: #ff4d4d;
+}
+
+.task button:hover {
+  background-color: #fff1f1;
+  transform: scale(1.2); 
+}

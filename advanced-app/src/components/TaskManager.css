@@ -1,0 +1,83 @@
+/* Hlavní kontejner widgetu */
+.task-widget {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  color: #333;
+}
+
+.task-widget h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* Stylování formuláře a řádku s inputem */
+.task-widget form div {
+  display: flex;
+  gap: 8px; /* Mezera mezi inputem a tlačítkem */
+  margin-bottom: 24px;
+}
+
+.task-widget input[type="text"] {
+  flex: 1; /* Input zabere veškeré volné místo */
+  padding: 10px 14px;
+  border: 2px solid #e1e1e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.task-widget input[type="text"]:focus {
+  border-color: #4a90e2; /* Změna barvy při psaní */
+}
+
+.task-widget input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.task-widget input[type="submit"]:hover {
+  background-color: #357abd;
+}
+
+/* Seznam úkolů */
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.tasks::-webkit-scrollbar {
+  width: 4px;
+}
+
+.tasks::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.tasks::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.tasks::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
